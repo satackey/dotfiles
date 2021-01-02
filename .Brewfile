@@ -115,8 +115,12 @@ cask "zoomus"
 mas "Apple Configurator 2", id: 1037126344
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
+mas "Microsoft Word", id: 462054704
 mas "Notability", id: 736189492
 mas "Numbers", id: 409203825
+mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
 mas "RunCat", id: 1429033973
