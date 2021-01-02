@@ -3,5 +3,5 @@
 ```shell
 % cd
 % git clone --recursive https://github.com/satackey/dotfiles.git
-% ln -fs dotfiles/.(*~git~gitmodules) .
+% ln -fs dotfiles/.(*~git~gitmodules~gitignore) .
 ```
