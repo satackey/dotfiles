@@ -24,4 +24,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # pyenv
-eval "$(pyenv init -)"
+if which pyenv > /dev/null; then
+  eval "$(pyenv init -)"
+fi
