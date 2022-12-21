@@ -1,8 +1,9 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 if ! type "apt-get" > /dev/null; then
     apt-get install -y zsh
 fi
 
 git submodule update --init --recursive
-ln -fs dotfiles/.(*~git~gitmodules~gitignore) .
+shopt -s extglob
+ln -fs dotfiles/.!(.|git|gitmodules|gitignore|) .
