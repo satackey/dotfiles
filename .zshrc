@@ -12,10 +12,10 @@ fi
 
 # Customize to your needs...
 
-# zs-completions を設定
-if [ -e /usr/local/share/zsh-completions ]; then
-    fpath=(/usr/local/share/zsh-completions $fpath)
-fi
+# # zs-completions を設定
+# if [ -e /usr/local/share/zsh-completions ]; then
+#     fpath=(/usr/local/share/zsh-completions $fpath)
+# fi
 
 # golang
 export PATH=$PATH:~/go/bin
