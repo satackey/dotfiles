@@ -7,4 +7,4 @@ fi
 
 git submodule update --init --recursive
 shopt -s extglob
-ln -fs .!(.|git|gitmodules|gitignore|) ~
+echo ln -fs "$(dirname ${BASH_SOURCE[0]})/.!(.|git|gitmodules|gitignore|)" ~
