@@ -27,3 +27,7 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 if which pyenv > /dev/null; then
   eval "$(pyenv init -)"
 fi
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/satackey/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
