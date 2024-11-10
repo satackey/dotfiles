@@ -27,3 +27,6 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 if which pyenv > /dev/null; then
   eval "$(pyenv init -)"
 fi
+
+# enable pnpm for volta
+export VOLTA_FEATURE_PNPM=1

@@ -1,3 +1,7 @@
 [user]
 	name = satackey
 	email = me@satackey.com
+[credential]
+	helper = osxkeychain
+[core]
+	quotepath = false
