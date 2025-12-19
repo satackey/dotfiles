@@ -9,5 +9,11 @@ pushd "$(dirname ${BASH_SOURCE[0]})";
 git submodule update --init --recursive
 popd
 
-shopt -s extglob
-ln -fs $(echo "$(dirname ${BASH_SOURCE[0]})/.!(.|git|gitmodules|gitignore|)") ~
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+for file in "$DOTFILES_DIR"/.[!.]*; do
+    filename="$(basename "$file")"
+    # .git, .gitmodules, .gitignore を除外
+    if [[ ! "$filename" =~ ^\.git(modules|ignore)?$ ]]; then
+        ln -fs "$file" ~/"$filename"
+    fi
+done
